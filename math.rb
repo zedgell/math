@@ -60,8 +60,12 @@ elsif type == "multiplication"
 	multiply = multiply.to_f
 	puts "#{number7} * #{number8} = #{multiply}"
 elsif type == ""
-	puts "you had a typing error please try again"
+	puts "you must type a problem type or type exit"
 elsif type == "exit"
+	puts "thank you for using math"
+	puts "by Zachary Edgell"
 	break
+elsif type != "addition" or type != "subtraction" or type != "divison" or type != "multiplication" or type != "exit"
+	puts "you had a typing error please try again"
 end
 end
